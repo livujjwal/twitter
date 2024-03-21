@@ -78,7 +78,7 @@ const LandingPage = () => {
       </div>
       <div className="flex items-center justify-around w-[90%] mx-auto my-4">
         {FOOTER.map((item) => (
-          <p className="text-xs" key={item}>
+          <p className="text-[0.65rem]" key={item}>
             {item}
           </p>
         ))}
