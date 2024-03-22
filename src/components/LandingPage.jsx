@@ -8,20 +8,20 @@ import { useNavigate } from "react-router-dom";
 const LandingPage = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-screen h-screen">
-      <div className="w-full h-[90%] flex items-center">
-        <div className="w-[60%] h-full">
+    <div className="w-screen sm:h-screen ">
+      <div className="w-full sm:h-[90%] flex items-center max-sm:flex-col">
+        <div className="w-[60%] sm:h-full max-sm:w-full">
           <img
             className="w-full h-full  object-cover"
             src={hero}
             alt="hero-image-twitter"
           />
         </div>
-        <div className="w-[40%] flex flex-col items-start px-14">
+        <div className="w-[40%] flex flex-col items-start px-14 max-sm:w-full max-sm:my-4 max-sm:px-4 max-sm:mx-auto">
           <img src={logo} alt="twitter-logo my-6" />
           <h1 className="text-5xl font-extrabold my-4">Happening now</h1>
           <h2 className="text-xl font-extrabold my-4">Join Twitter today</h2>
-          <div className="flex flex-col items-center  gap-4 my-4">
+          <div className="flex flex-col items-center  gap-4 my-4 max-sm:mx-auto">
             <button
               className="p-2 border border-[#E4EAED] rounded-xl w-60 text-[12px] font-bold"
               onClick={() => {
@@ -36,7 +36,7 @@ const LandingPage = () => {
               Sign up with Google
             </button>
             <button
-              className="p-2 border border-[#E4EAED] rounded-xl w-60 text-[12px] font-bold"
+              className="p-2 border border-[#E4EAED] rounded-xl w-60 text-[12px] font-bold max-sm:w-full"
               onClick={() => {
                 navigate("/signup");
               }}
@@ -76,7 +76,7 @@ const LandingPage = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-around w-[90%] mx-auto my-4">
+      <div className="flex items-center justify-around w-[90%] mx-auto my-4 max-lg:flex-wrap">
         {FOOTER.map((item) => (
           <p className="text-[0.65rem]" key={item}>
             {item}

@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 const SignupPage = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-screen h-screen flex justify-center mx-auto ">
-      <div className="w-96 h-[90%] item-center flex flex-col item-center justify-center px-6">
+    <div className="w-screen h-screen flex justify-center mx-auto max-lg:h-[70%] max-lg:mt-8">
+      <div className="w-96 h-[90%] item-center flex flex-col item-center justify-center px-6 ">
         <img className="w-6 mb-4 self-center" src={logo} alt="Twitter Logo" />
         <h2 className="font-bold text-left text-lg  my-1">Create an account</h2>
         <input
